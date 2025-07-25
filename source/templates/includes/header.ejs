@@ -1,9 +1,594 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/images/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/images/favicon/apple-touch-icon-152x152.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/flexslider.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/jquery.fancybox.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/slick.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/bootstrap.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/animate.min.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/magnific-popup.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/icon-fonts.css"
+      type="text/css"
+      media="all"
+    />
+
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/css_003.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/css.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/css_002.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/material.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/common.css"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/ui.design-tokens.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/ui.font.opensans.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/main.popup.bundle.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/page_65a2687a49f5b62c619453fe8f1cd788_v1.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%E2%80%94%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%20%D1%81%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%BE%D0%B9_files/template_3d219f5d333beef55b432557352cc49a_v1.css"
+      type="text/css"
+      data-template-style="true"
+      rel="stylesheet"
+    />
     <title><%= title %></title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo logo">
+          <div class="logo__image">
+            <a href="/">
+              <img
+                src="https:/dom-bitovki.ru/images/logo-dark.png"
+                width="152"
+                height="45"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="logo__slogan">
+            Бытовки и дачные домики<br />
+            от производителя
+          </div>
+        </div>
+
+        <div class="header__contacts header-contacts">
+          <div class="header-contacts__messengers">
+            <a href="https://t.me/+79251456756" rel="nofollow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="#039be5"
+              >
+                <path
+                  d="M14,0A14,14,0,1,0,28,14,14,14,0,0,0,14,0Zm6.87634,9.59117L18.578,20.419c-.17033.76767-.6265.95433-1.26467.59267l-3.5-2.57951L12.12517,20.0585a.88271.88271,0,0,1-.70583.34416l.2485-3.56183,6.48666-5.86016c.28234-.24851-.063-.38851-.43516-.14117l-8.01617,5.047L6.2475,14.8085c-.75016-.238-.7665-.75017.15867-1.11183h0L19.9045,8.49217c.6265-.22634,1.17367.15283.97067,1.10016Z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/79251456756" rel="nofollow">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="#29a71a"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM14.458 21.789H14.4615C19.0514 21.7871 22.7844 18.0532 22.7862 13.4642C22.7871 11.2399 21.922 9.14831 20.3503 7.57482C18.7786 6.00125 16.6884 5.13429 14.4614 5.13333C9.87281 5.13333 6.13829 8.86765 6.13646 13.4576C6.13584 14.9249 6.51918 16.357 7.24769 17.6195L6.06667 21.9333L10.4798 20.7757C11.6957 21.4389 13.0647 21.7885 14.458 21.789Z"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.9369 19.4184L10.6843 19.2684L8.06546 19.9554L8.76446 17.4021L8.59994 17.1403C7.90731 16.0387 7.54149 14.7654 7.54203 13.458C7.54355 9.64299 10.6476 6.53926 14.4642 6.53926C16.3123 6.5399 18.0496 7.26053 19.356 8.56842C20.6624 9.87631 21.3814 11.6147 21.3807 13.4636C21.3791 17.2788 18.2752 20.3829 14.4615 20.3829H14.4587C13.2171 20.3824 11.9993 20.0488 10.9369 19.4184ZM18.3707 15.2565C18.5158 15.3266 18.6137 15.3739 18.6556 15.4437C18.7076 15.5305 18.7076 15.9469 18.5343 16.4329C18.3609 16.9188 17.5299 17.3622 17.1302 17.4219C16.7718 17.4755 16.3183 17.4979 15.82 17.3395C15.5179 17.2437 15.1305 17.1157 14.6342 16.9013C12.6841 16.0593 11.3663 14.1693 11.1172 13.8121C11.0998 13.7871 11.0876 13.7696 11.0807 13.7605L11.0791 13.7582C10.969 13.6114 10.2314 12.6272 10.2314 11.6087C10.2314 10.6506 10.702 10.1483 10.9187 9.91717C10.9335 9.90134 10.9472 9.88677 10.9594 9.87342C11.1501 9.66517 11.3754 9.61311 11.5141 9.61311C11.6528 9.61311 11.7916 9.61439 11.9128 9.62047C11.9277 9.62122 11.9433 9.62113 11.9594 9.62104C12.0806 9.62033 12.2317 9.61944 12.3808 9.97754C12.4382 10.1154 12.5221 10.3197 12.6106 10.5352C12.7896 10.9709 12.9873 11.4524 13.0221 11.522C13.0742 11.6262 13.1088 11.7476 13.0395 11.8865C13.0291 11.9073 13.0194 11.9269 13.0102 11.9457C12.9582 12.052 12.9199 12.1302 12.8315 12.2334C12.7967 12.274 12.7608 12.3178 12.7249 12.3615C12.6533 12.4487 12.5818 12.5358 12.5194 12.5979C12.4153 12.7016 12.3069 12.8141 12.4282 13.0224C12.5496 13.2306 12.9671 13.9118 13.5854 14.4634C14.2502 15.0563 14.8279 15.3069 15.1208 15.4339C15.1779 15.4587 15.2243 15.4788 15.2582 15.4958C15.4662 15.6 15.5875 15.5825 15.7089 15.4437C15.8302 15.3049 16.2289 14.8363 16.3675 14.6281C16.5062 14.42 16.6449 14.4546 16.8355 14.524C17.0262 14.5935 18.0489 15.0967 18.2569 15.2008C18.2975 15.2211 18.3355 15.2394 18.3707 15.2565Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header-contacts__phone">
+            <a href="tel:+74956423191">+7 (495) 642-31-91</a>
+            <br />
+            <a href="tel:+79264405986">+7 (926) 440-59-86</a>
+          </div>
+          <div class="header-contacts__time">
+            Пн-Пт: 9:00-18:00. Сб-Вс: выходной
+          </div>
+        </div>
+
+        <div class="header__order">
+          <button class="header-order">Заказать звонок</button>
+        </div>
+
+        <div class="header__burger">
+          <button class="burger-button js-burger">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="page-nav">
+      <div class="page-nav__phones-mobile">
+        <a href="tel:+74956423191">+7 (495) 642-31-91</a>
+        <br />
+        <a href="tel:+79264405986">+7 (926) 440-59-86</a>
+      </div>
+      <div class="page-nav__inner js-nav">
+        <div class="page-nav__menu">
+          <div class="main-menu">
+            <ul class="main-menu__list main-menu__list--lvl1">
+              <li
+                class="main-menu__item main-menu__item--lvl1 main-menu__item--parent main-menu__item--selected main-menu__item--wide"
+              >
+                <button class="main-menu__dropdown"></button>
+                <a
+                  href="/produktsiya/"
+                  class="main-menu__link main-menu__link--lvl1 main-menu__link--selected"
+                >
+                  Каталог
+                </a>
+                <ul class="main-menu__list main-menu__list--lvl2">
+                  <li class="main-menu__item main-menu__item--lvl1">
+                    <span
+                      class="main-menu__link main-menu__link--lvl2 main-menu__dropdown-back"
+                      >⟵ Назад</span
+                    >
+                  </li>
+                  <li
+                    class="main-menu__item main-menu__item--lvl2 main-menu__item--parent main-menu__item--selected"
+                  >
+                    <button class="main-menu__dropdown"></button>
+                    <a
+                      href="/produktsiya/bytovki/"
+                      class="main-menu__link main-menu__link--lvl2 main-menu__link--selected"
+                      >Бытовки</a
+                    >
+                    <ul class="main-menu__list main-menu__list--lvl3">
+                      <li class="main-menu__item main-menu__item--lvl2">
+                        <span
+                          class="main-menu__link main-menu__link--lvl3 main-menu__dropdown-back"
+                          >⟵ Назад</span
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/v-nalichii/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >В наличии</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/3-metra/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >3 метра</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/dachnye/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Дачные</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/so-sborkoy-na-uchastke/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Со сборкой на участке</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/domiki-iz-2-bytovok/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Домики из 2 бытовок</a
+                        >
+                      </li>
+                      <li
+                        class="main-menu__item main-menu__item--lvl3 main-menu__item--selected"
+                      >
+                        <span
+                          class="main-menu__link main-menu__link--lvl3 main-menu__link--selected"
+                          >Новые</span
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/bytovki/posty-okhrany/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Посты охраны (КПП)</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="main-menu__item main-menu__item--lvl2 main-menu__item--parent"
+                  >
+                    <button class="main-menu__dropdown"></button>
+                    <a
+                      href="/produktsiya/blok-konteynery/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Блок-контейнеры</a
+                    >
+                    <ul class="main-menu__list main-menu__list--lvl3">
+                      <li class="main-menu__item main-menu__item--lvl2">
+                        <span
+                          class="main-menu__link main-menu__link--lvl3 main-menu__dropdown-back"
+                          >⟵ Назад</span
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/stroitelnye/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Строительные</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/3-metra/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >3 метра</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/4-metra/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >4 метра</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/6-metrov/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >6 метров</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/dvukhkomnatnye/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Двухкомнатные</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/dlya-dachi/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Для дачи</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/blok-konteynery/pod-sklad/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Под склад</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="main-menu__item main-menu__item--lvl2 main-menu__item--parent"
+                  >
+                    <button class="main-menu__dropdown"></button>
+                    <a
+                      href="/produktsiya/domiki-iz-bytovok/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Домики из бытовок</a
+                    >
+                    <ul class="main-menu__list main-menu__list--lvl3">
+                      <li class="main-menu__item main-menu__item--lvl2">
+                        <span
+                          class="main-menu__link main-menu__link--lvl3 main-menu__dropdown-back"
+                          >⟵ Назад</span
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/domiki-iz-bytovok/dachnye/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >Дачные</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/domiki-iz-bytovok/6-na-3/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >6 на 3</a
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/domiki-iz-bytovok/3-na-6/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >3 на 6</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-menu__item main-menu__item--lvl2">
+                    <a
+                      href="/produktsiya/dachnye-doma/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Дачные дома</a
+                    >
+                  </li>
+                  <li
+                    class="main-menu__item main-menu__item--lvl2 main-menu__item--parent"
+                  >
+                    <button class="main-menu__dropdown"></button>
+                    <a
+                      href="/produktsiya/khozbloki-i-sarai/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Хозблоки и сараи</a
+                    >
+                    <ul class="main-menu__list main-menu__list--lvl3">
+                      <li class="main-menu__item main-menu__item--lvl2">
+                        <span
+                          class="main-menu__link main-menu__link--lvl3 main-menu__dropdown-back"
+                          >⟵ Назад</span
+                        >
+                      </li>
+                      <li class="main-menu__item main-menu__item--lvl3">
+                        <a
+                          href="/produktsiya/khozbloki-i-sarai/s-drovnikom/"
+                          class="main-menu__link main-menu__link--lvl3"
+                          >С дровником</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-menu__item main-menu__item--lvl2">
+                    <a
+                      href="/produktsiya/karkasnye-doma/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Каркасные дома</a
+                    >
+                  </li>
+                  <li class="main-menu__item main-menu__item--lvl2">
+                    <a
+                      href="/produktsiya/stroitelnye-gorodki/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Строительные городки</a
+                    >
+                  </li>
+                  <li class="main-menu__item main-menu__item--lvl2">
+                    <a
+                      href="/produktsiya/doma-iz-morskih-kontejnerov/"
+                      class="main-menu__link main-menu__link--lvl2"
+                      >Дома из морских контейнеров</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/tseny/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Цены</a
+                >
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/actions/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Акции</a
+                >
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/oplata/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Оплата</a
+                >
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/dostavka/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Доставка</a
+                >
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/galereya/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Галерея</a
+                >
+              </li>
+              <li class="main-menu__item main-menu__item--lvl1">
+                <a
+                  href="/kontakty/"
+                  class="main-menu__link main-menu__link--lvl1"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-nav__contacts">
+          <div class="header-contacts">
+            <div class="header-contacts__messengers">
+              <a href="https://t.me/+79251456756" rel="nofollow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="#039be5"
+                >
+                  <path
+                    d="M14,0A14,14,0,1,0,28,14,14,14,0,0,0,14,0Zm6.87634,9.59117L18.578,20.419c-.17033.76767-.6265.95433-1.26467.59267l-3.5-2.57951L12.12517,20.0585a.88271.88271,0,0,1-.70583.34416l.2485-3.56183,6.48666-5.86016c.28234-.24851-.063-.38851-.43516-.14117l-8.01617,5.047L6.2475,14.8085c-.75016-.238-.7665-.75017.15867-1.11183h0L19.9045,8.49217c.6265-.22634,1.17367.15283.97067,1.10016Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://wa.me/79251456756" rel="nofollow">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="#29a71a"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM14.458 21.789H14.4615C19.0514 21.7871 22.7844 18.0532 22.7862 13.4642C22.7871 11.2399 21.922 9.14831 20.3503 7.57482C18.7786 6.00125 16.6884 5.13429 14.4614 5.13333C9.87281 5.13333 6.13829 8.86765 6.13646 13.4576C6.13584 14.9249 6.51918 16.357 7.24769 17.6195L6.06667 21.9333L10.4798 20.7757C11.6957 21.4389 13.0647 21.7885 14.458 21.789Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.9369 19.4184L10.6843 19.2684L8.06546 19.9554L8.76446 17.4021L8.59994 17.1403C7.90731 16.0387 7.54149 14.7654 7.54203 13.458C7.54355 9.64299 10.6476 6.53926 14.4642 6.53926C16.3123 6.5399 18.0496 7.26053 19.356 8.56842C20.6624 9.87631 21.3814 11.6147 21.3807 13.4636C21.3791 17.2788 18.2752 20.3829 14.4615 20.3829H14.4587C13.2171 20.3824 11.9993 20.0488 10.9369 19.4184ZM18.3707 15.2565C18.5158 15.3266 18.6137 15.3739 18.6556 15.4437C18.7076 15.5305 18.7076 15.9469 18.5343 16.4329C18.3609 16.9188 17.5299 17.3622 17.1302 17.4219C16.7718 17.4755 16.3183 17.4979 15.82 17.3395C15.5179 17.2437 15.1305 17.1157 14.6342 16.9013C12.6841 16.0593 11.3663 14.1693 11.1172 13.8121C11.0998 13.7871 11.0876 13.7696 11.0807 13.7605L11.0791 13.7582C10.969 13.6114 10.2314 12.6272 10.2314 11.6087C10.2314 10.6506 10.702 10.1483 10.9187 9.91717C10.9335 9.90134 10.9472 9.88677 10.9594 9.87342C11.1501 9.66517 11.3754 9.61311 11.5141 9.61311C11.6528 9.61311 11.7916 9.61439 11.9128 9.62047C11.9277 9.62122 11.9433 9.62113 11.9594 9.62104C12.0806 9.62033 12.2317 9.61944 12.3808 9.97754C12.4382 10.1154 12.5221 10.3197 12.6106 10.5352C12.7896 10.9709 12.9873 11.4524 13.0221 11.522C13.0742 11.6262 13.1088 11.7476 13.0395 11.8865C13.0291 11.9073 13.0194 11.9269 13.0102 11.9457C12.9582 12.052 12.9199 12.1302 12.8315 12.2334C12.7967 12.274 12.7608 12.3178 12.7249 12.3615C12.6533 12.4487 12.5818 12.5358 12.5194 12.5979C12.4153 12.7016 12.3069 12.8141 12.4282 13.0224C12.5496 13.2306 12.9671 13.9118 13.5854 14.4634C14.2502 15.0563 14.8279 15.3069 15.1208 15.4339C15.1779 15.4587 15.2243 15.4788 15.2582 15.4958C15.4662 15.6 15.5875 15.5825 15.7089 15.4437C15.8302 15.3049 16.2289 14.8363 16.3675 14.6281C16.5062 14.42 16.6449 14.4546 16.8355 14.524C17.0262 14.5935 18.0489 15.0967 18.2569 15.2008C18.2975 15.2211 18.3355 15.2394 18.3707 15.2565Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="header-contacts__phone">
+              <a href="tel:+74956423191">+7 (495) 642-31-91</a>
+              <br />
+              <a href="tel:+79264405986">+7 (926) 440-59-86</a>
+            </div>
+            <div class="header-contacts__time">
+              Пн-Пт: 9:00-18:00. Сб-Вс: выходной
+            </div>
+          </div>
+          <div class="page-nav__order">
+            <button
+              class="header-order"
+              data-form-type="callback"
+              onclick="yaCounter45231867.reachGoal('obratniy-zvonok'); return true;"
+            >
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>

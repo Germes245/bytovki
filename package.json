@@ -5,7 +5,8 @@
   "description": "Веб-приложение",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "format": "prettier --write ."
   },
   "keywords": [
     "express",
@@ -16,7 +17,8 @@
   "author": "Артем",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "prettier": "^3.6.2"
   },
   "dependencies": {
     "dotenv": "^17.2.0",

@@ -1,0 +1,327 @@
+/* Start:/local/templates/index/components/bitrix/catalog/catalog/style.css?1600012886276*/
+.catalog-sorter__templates-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 0;
+  float: right;
+}
+
+.catalog-sorter__templates-list li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.catalog-sorter__templates-list img {
+  display: block;
+}
+/* End */
+
+/* Start:/bitrix/components/bitrix/system.pagenavigation/templates/modern/style.min.css?1681810259675*/
+div.modern-page-navigation {
+  padding: 0.5em 0;
+}
+div.modern-page-navigation a,
+span.modern-page-current,
+span.modern-page-dots {
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding-left: 0.75em;
+  padding-right: 0.5em;
+  text-decoration: none;
+}
+div.modern-page-navigation a.modern-page-previous {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left: 0;
+}
+div.modern-page-navigation a.modern-page-first,
+div.modern-page-navigation span.modern-page-first {
+  border-left: 0;
+  padding-left: 0.5em;
+}
+span.modern-page-current {
+  font-weight: var(--ui-font-weight-bold);
+}
+div.modern-page-navigation a,
+span.modern-page-current,
+div.modern-page-navigation a.modern-page-previous,
+span.modern-page-dots {
+  border-color: #cdcdcd;
+}
+/* End */
+
+/* Start:/local/templates/index/components/bitrix/catalog/catalog/bitrix/catalog.section/showcase/style.css?17410004021236*/
+.showcase-products {
+}
+
+.showcase-products > div {
+  margin-bottom: 30px;
+}
+
+.showcase-products .showcase-item {
+  border: 1px solid #e5e5e5;
+  padding: 7px;
+  text-align: center;
+  position: relative;
+}
+
+.showcase-products .showcase-item .showcase-image {
+  height: 200px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.showcase-products .showcase-item .showcase-image img {
+  max-height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.showcase-products .showcase-item .showcase-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  height: 44px;
+}
+
+.showcase-products .showcase-item .showcase-price-old {
+  color: #d3d3d3;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-decoration: line-through;
+}
+
+.showcase-products .showcase-item .showcase-price {
+  color: #46aec1;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .showcase-products .showcase-item .btn_b {
+    margin: 5px;
+  }
+}
+
+.showcase-video {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.showcase-video svg {
+  width: 30px;
+  height: 30px;
+}
+
+.showcase-video-rutube {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 10;
+}
+
+.showcase-video-rutube svg {
+  width: 30px;
+  height: 30px;
+}
+/* End */
+
+/* Start:/local/templates/index/components/bitrix/news.list/advatages/style.css?15086418701132*/
+.advantages-list {
+  padding: 40px 0;
+}
+
+.advantages-list .advantages-item {
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.advantages-list .advantages-item .advantages-img-wr {
+  padding: 0 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #263635;
+}
+
+.advantages-list .advantages-item .advantages-img-wr .advantages-img {
+  padding-top: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  position: relative;
+}
+
+.advantages-list .advantages-item .advantages-img-wr .advantages-img svg {
+  position: absolute;
+  fill: #36bad8;
+  fill-rule: evenodd;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+}
+
+@media (max-width: 992px) and (min-width: 781px) {
+  .advantages-list .advantages-item {
+    width: 33%;
+    float: left;
+    margin-bottom: 30px;
+  }
+
+  .advantages-list .advantages-item:nth-child(3n + 1) {
+    clear: left;
+  }
+}
+
+@media (max-width: 780px) {
+  .advantages-list .advantages-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+  }
+
+  .advantages-list .advantages-item:nth-child(2n + 1) {
+    clear: left;
+  }
+}
+/* End */
+
+/* Start:/local/templates/index/components/bitrix/catalog.section/showcase-slider/style.css?16312509672048*/
+.showcase-slider {
+  margin: 30px 0;
+}
+
+.showcase-slider .slick-track {
+  min-width: 100%;
+}
+
+.showcase-slider__item {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.showcase-slider__item-inner {
+  border: 1px solid #e5e5e5;
+  padding: 7px;
+  text-align: center;
+  position: relative;
+}
+
+.showcase-slider__label {
+}
+
+.showcase-slider__label {
+  position: absolute;
+  color: #fff;
+  background: #e74c3c;
+  padding: 4px 10px 4px 20px;
+  height: 34px;
+  line-height: 26px;
+  z-index: 99;
+  left: 0;
+  top: 0;
+}
+
+.showcase-slider__label:after {
+  content: '';
+  border-left: 27px solid #e74c3c;
+  border-bottom: 34px solid transparent;
+  position: absolute;
+  right: -27px;
+  top: 0;
+}
+
+.showcase-slider__image {
+  height: 200px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.showcase-slider__image img {
+  max-height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.showcase-slider__name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  height: 44px;
+}
+
+.showcase-slider__price-old {
+  color: #d3d3d3;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-decoration: line-through;
+}
+
+.showcase-slider__price {
+  color: #46aec1;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .showcase-slider__item .btn_b {
+    margin: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .showcase-slider__item {
+    /*max-width: 33.33333%;*/
+  }
+}
+
+.showcase-slider__arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: -0.75em 0 0 0;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  width: 1.5em;
+  height: 1.5em;
+  border-bottom: 3px solid #238298;
+}
+
+.showcase-slider__arrow--prev {
+  left: 0.5em;
+  border-left: 3px solid #238298;
+  transform: rotate(45deg);
+}
+
+.showcase-slider__arrow--next {
+  right: 0.5em;
+  border-right: 3px solid #238298;
+  transform: rotate(-45deg);
+}
+/* End */
+/* /local/templates/index/components/bitrix/catalog/catalog/style.css?1600012886276 */
+/* /bitrix/components/bitrix/system.pagenavigation/templates/modern/style.min.css?1681810259675 */
+/* /local/templates/index/components/bitrix/catalog/catalog/bitrix/catalog.section/showcase/style.css?17410004021236 */
+/* /local/templates/index/components/bitrix/news.list/advatages/style.css?15086418701132 */
+/* /local/templates/index/components/bitrix/catalog.section/showcase-slider/style.css?16312509672048 */
